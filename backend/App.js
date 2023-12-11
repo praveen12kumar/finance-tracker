@@ -5,4 +5,8 @@ const app = express();
 
 
 
+// using middleware 
+app.use(express.json());
+app.use(express.urlencoded());
+
 export default app;

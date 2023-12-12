@@ -16,7 +16,7 @@ const incomeSchema = new mongoose.Schema({
     },
     category:{
         type:String,
-        enum:["Salary","Wages","Freelance","Dividend","Interest","Rent-Income","Profit","Capital Gains","Bonus","Gifts","None"],
+        enum:["Salary","Wages","Freelance","Dividend","Interest","Rent Income","Profit","Capital Gains","Bonus","Gifts","None"],
         default: "Salary",
     }
 },{

@@ -15,7 +15,7 @@ const savingsSchema = new mongoose.Schema({
     },
     category:{
         type:String,
-        enum:["Debt","Equity","Property","Gold","Bank Account","Fixed deposits","Mutual Funds","Travel-Plans","Other"],
+        enum:["Debt","Equity","Property","Gold","Bank Account","Fixed deposits","Mutual Funds","Travel Plans","Other"],
         default:"Other"
     }
 },{

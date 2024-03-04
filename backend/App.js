@@ -8,6 +8,9 @@ import ExpenseRouter from "./router/ExpenseRouter.js";
 import SavingRouter from "./router/SavingRouter.js";
 
 config({path:"backend/config/config.env"})
+
+const __dirname = path.resolve();
+
 const app = express();
 
 // using middleware 
@@ -22,6 +25,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1', IncomeRouter);
 app.use('/api/v1', ExpenseRouter);
 app.use('/api/v1', SavingRouter);
+
+
+app.use(express.static(path.join(__dirname, '/frontend/dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
+})
+
+
+
+
 
 
 app.use(errorHandler);

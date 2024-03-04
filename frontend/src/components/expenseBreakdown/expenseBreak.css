@@ -1,0 +1,13 @@
+.breakdown{
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}
+.breakdown > p{
+    font-family: "poppins";
+    font-size: 1rem;
+}
+
+.breakdown > p:last-child{
+    font-weight: 600;
+}

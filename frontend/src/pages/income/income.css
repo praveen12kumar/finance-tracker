@@ -1,0 +1,47 @@
+.income-section{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;    
+}
+
+.income-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.income-container > h3{
+    margin-top:  1rem;
+    font-family: "roboto";
+    letter-spacing: 1px;
+}
+
+.summary{
+    font-family: "poppins";
+}
+
+@media screen and (max-width: 900px) {
+    .income-section{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .income-section{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .income-section{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .income-section{
+        width: 100%;
+    }
+}

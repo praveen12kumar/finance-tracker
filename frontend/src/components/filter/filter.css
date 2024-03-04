@@ -1,0 +1,31 @@
+.filter-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-family: roboto;
+}
+
+
+.filters{
+    width: 80%;
+    display: flex; 
+    justify-content: center;  
+    gap: 1em;
+}
+
+.filters span{
+    font-weight: 500;
+}
+
+.filter-group{
+    display: flex;
+    align-items: center;
+}
+.filter-group span{
+    font-weight: 500;
+    margin-right: 10px;
+}

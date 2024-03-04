@@ -1,0 +1,34 @@
+.report{
+    width: 60vw;
+    height: 60vh;
+}
+
+.report h2{
+    margin: 1rem 0;
+    font-family: "poppins";
+}
+
+.report-container{
+    margin-bottom: 2rem;
+}
+
+.report-container span{
+    font-size: 1.1rem;
+    font-family: "roboto";
+    margin-right: 10px;
+}
+
+
+.incomevsexpene-report{
+    border: 1px solid lightgray;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}   
+
+.incomevsexpene-report > p{
+    font-family: "poppins";
+}

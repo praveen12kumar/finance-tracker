@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Overlock:ital@0;1&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading-title{
+    font-size: 1.7rem;
+    margin: 0.5rem 0;
+    font-family: "poppins";
+}
+
+.content{
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 20px 60px 60px #00000041, inset -20px 20px 20px #f5dada40;
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+.btn{
+  padding: 0.7rem 3rem;
+  margin:1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(72, 121, 122);
+  font-family: "poppins";
+  letter-spacing: 1px;
+}

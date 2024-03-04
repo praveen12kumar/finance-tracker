@@ -6,6 +6,7 @@ import {errorHandler} from "./middlewares/errorHandler.js";
 import IncomeRouter from "./router/IncomeRouter.js";
 import ExpenseRouter from "./router/ExpenseRouter.js";
 import SavingRouter from "./router/SavingRouter.js";
+import path from "path";
 
 config({path:"backend/config/config.env"})
 

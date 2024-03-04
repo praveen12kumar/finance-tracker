@@ -3,8 +3,8 @@ import axios from "axios";
 const fetchIncome = ()=> async(dispatch)=>{
     try {
         dispatch({type: "LOADING"});
-        const response = await axios.get("https://finance-tracker-puce.vercel.app/api/v1/income")
-        console.log(response)
+        const response = await axios.get("/api/v1/income")
+        // console.log(response)
 
         dispatch({type:"FETCH_INCOME", payload: response.data.income})
 
@@ -20,10 +20,10 @@ const addIncome = (income)=> async(dispatch)=>{
     try {
         const {data} = await axios({
             method: "POST",
-            url:`https://finance-tracker-l6zs.onrender.com/api/v1/income`,
+            url:`/api/v1/income`,
             data:income
         })
-        console.log(data);
+        // console.log(data);
         dispatch({type:"ADD_INCOME", payload:data})
 
     } catch (error) {

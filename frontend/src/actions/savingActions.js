@@ -3,7 +3,7 @@ import axios from "axios";
 const fetchSaving = ()=> async(dispatch)=>{
     try {
         dispatch({type: "LOADING"});
-        const response = await axios.get("https://finance-tracker-puce.vercel.app/api/v1/saving")
+        const response = await axios.get("/api/v1/saving")
         //console.log("response",response.data.savings)
 
         dispatch({type:"FETCH_SAVING", payload: response.data.savings})
@@ -21,7 +21,7 @@ const addSaving = (saving)=> async(dispatch)=>{
     try {
         const {data} = await axios({
             method: "POST",
-            url:`https://finance-tracker-puce.vercel.app/api/v1/saving`,
+            url:`/api/v1/saving`,
             data:saving
         })
         dispatch({type:"ADD_SAVING", payload:data.saving})

@@ -49,8 +49,11 @@ const FinanceReports = () => {
             <p>Total Expense: <strong>{totalExpense}</strong></p>
             <p>Total Savings: <strong>{finalSaving}</strong></p>
           </div>
-        ) : <ExpenseBreakdown/>}
+        ) : null}
       </div>
+      {
+        reportStatus === "Expense" ? (<ExpenseBreakdown/>) : null
+      }
     </div>
   )
 }

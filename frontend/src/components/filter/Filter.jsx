@@ -15,17 +15,15 @@ const Filter = ({children, filters, setFilters, filterdData }) => {
   return (
     <div className="filter-section">
       <div className="filters">
-      <span>Sort by Amount: </span>
+      <span className="filter-sort">Sort by Amount: </span>
         <div className="filter-group">
-          <label>
-            <input type="radio" name="amount" value="LTH" onChange={(e)=> setFilters({...filters, sort:e.target.value})}  />
-            Low to High
+        <input type="radio" name="amount" value="LTH" onChange={(e)=> setFilters({...filters, sort:e.target.value})}  />
+          <label>Low to High
           </label>
         </div>
         <div className="filter-group">
-          <label>
-            <input type="radio" name="amount" value="HTL" onChange={(e)=> setFilters({...filters, sort:e.target.value})} />
-          High to Low 
+        <input type="radio" name="amount" value="HTL" onChange={(e)=> setFilters({...filters, sort:e.target.value})} />
+          <label> High to Low 
           </label>
         </div>
       </div>

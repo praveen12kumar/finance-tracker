@@ -34,7 +34,7 @@ form{
 .btn-section{
     display: flex;
     justify-content: center;
-    margin-top:  2rem ;
+    margin-top:  1rem ;
 }
 
 
@@ -42,6 +42,9 @@ form{
 @media screen and (max-width:768px) {
     .incomeExpense{
         width: 70vw;   
+    }
+    .btn-section input{
+        padding: 0.5rem 1rem;
     }
 } 
 

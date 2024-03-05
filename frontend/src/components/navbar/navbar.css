@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-   
+    padding: 0 0.5rem;
 }
 
 .navbar a{
@@ -40,5 +40,11 @@
     }
     .navbar a{
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .navbar{
+       gap: 0.8rem;
     }
 }

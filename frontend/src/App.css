@@ -26,7 +26,6 @@
 
 .btn{
   padding: 0.7rem 3rem;
-  margin:1rem;
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
@@ -35,16 +34,28 @@
   background-color: rgb(72, 121, 122);
   font-family: "poppins";
   letter-spacing: 1px;
+  transition: all 1s ease;
+}
+
+.btn:hover{
+  background-color: whitesmoke;
+  color: rgb(72, 121, 122);;
 }
 
 @media screen and (max-width: 768px) {
   .content{
     width: 60%;
   }
+  .heading-title{
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 600px) {
   .content{
     width: 70%;
+  }
+  .btn{
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 500px) {

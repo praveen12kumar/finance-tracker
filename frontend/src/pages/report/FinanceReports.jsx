@@ -39,9 +39,6 @@ const FinanceReports = () => {
             <option value="Expense">Expense Breakdown</option>
         </select>
       </div>
-      <div className="report-btn">
-        <button className='btn'>Generate Report</button>
-      </div>
       <div className="">
         {reportStatus === "IncomeVsExpense" ? (
           <div className="incomevsexpene-report">

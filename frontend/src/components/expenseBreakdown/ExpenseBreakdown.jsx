@@ -22,6 +22,7 @@ const ExpenseBreakdown = () => {
             }
           });
         }
+        
         return acc;
       }, []);
   return (

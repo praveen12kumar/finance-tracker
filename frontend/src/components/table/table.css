@@ -12,9 +12,9 @@ thead tr{
     background-color: cadetblue;
 }
 
-
 thead tr td{
     padding-left: 20px;
+    margin: 0 auto;
 }
 
 tbody tr td{

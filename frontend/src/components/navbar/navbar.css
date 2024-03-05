@@ -8,12 +8,12 @@
     align-items: center;
 }
 
+
 .title{
     font-family: "roboto", "Helvetica Neue";
     background: linear-gradient(to right, #30CFD0 0%, #330867 100% );
     background-clip: text;
     color: transparent;
-
 }
 
 .navbar{
@@ -31,4 +31,14 @@
     font-size: 1.1rem;
     font-family: "poppins";
     font-weight: 500;
+}
+
+@media screen and (max-width:768px){
+
+    .title{
+        font-size: 1.5rem;
+    }
+    .navbar a{
+        font-size: 0.8rem;
+    }
 }

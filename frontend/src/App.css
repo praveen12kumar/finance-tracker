@@ -13,6 +13,7 @@
 }
 
 .content{
+    width: 40%;
     margin: 0 auto;
     margin-top: 4rem;
     display: flex;
@@ -34,4 +35,20 @@
   background-color: rgb(72, 121, 122);
   font-family: "poppins";
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .content{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content{
+    width: 90%;
+  }
 }
